@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Shorter</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+        .main {
+            margin: auto;
+            background-color: white;
+            position: relative;
+            width: 250px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+        }
+        .alert {
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 40px;
+        }
+        .logo {
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .url {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 class="logo">Link Shorter</h1>
+        <div class="container">
+            <h2 class="alert">생성 성공</h2>
+            <a class="url" href={{ url }}>{{ url }}</div>    
+        </div>
+    </div>   
+</body>
+</html>

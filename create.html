@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Shorter</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+        .main {
+            margin: auto;
+            background-color: white;
+            position: relative;
+            width: 250px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+        }
+
+        .logo {
+            margin-top: 0px;
+            margin-bottom: 40px;
+        }
+
+        #create {
+            width: 100%;
+            background-color: silver;
+            border-color: transparent;
+            color: white;
+        }
+        #create:hover{
+            width: 100%;
+            background-color: skyblue;
+            border-color: transparent;
+            color: white;
+        }
+        .account {
+            display: block;
+            margin-bottom: 3px;
+            padding: 3px;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #alert {
+            border-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 class="logo">Link Shorter</h1>
+        <div class="container">
+            <form action="http://#DOMAIN/", method="post">
+                <input type="text" name="key" placeholder="urlmaker.me/URL" class="account">
+                <input type="text" name="redirect" placeholder="단축할 URL" class="account">
+                <button type= "submit" id="create" class="account">생성</button>
+            </form>
+            <p id="alert" class="account"> </p>
+        </div>
+    </div>   
+</body>
+</html>
